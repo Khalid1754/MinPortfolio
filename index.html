@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Khalid Hassan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Om mig</a></li>
+          <li><a href="#experience">Erfarenhet</a></li>
+          <li><a href="#projects">Projekt</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Khalid Hassan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Om mig</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Erfarenhet</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projekt</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./Bilagor/" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hej, Jag heter</p>
+        <h1 class="title">Khalid Hassan</h1>
+        <p class="section__text__p2">Utbildad systemvetare</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./Bilagor//resume-example.pdf')"
+          >
+            Ladda ner CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Kontakt Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./Bilagor//linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/khalid-hassan-0b62222b2/'"
+          />
+          <img
+            src="./Bilagor//github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Khalid1754'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Lär känna mig mer</p>
+      <h1 class="title">Om mig</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./Bilagor//about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./Bilagor//experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Erfarenhet</h3>
+              <p>0+ år<br /></p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./Bilagor//education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Utbildning</h3>
+              <p>B.Sc. Bachelors Degree<br /> Filosofie kandidatexamen (fil.kand.), inriktning systemutveckling</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Jag har precis avslutat min utbildning till systemvetare och ser fram emot att börja min karriär inom IT. 
+                Under utbildningen har jag fått en bred kunskap inom systemutveckling, programmering och databashantering, 
+                vilket har gett mig en god förståelse för hur IT kan användas för att lösa problem och förbättra verksamheter.
+                Jag har alltid varit intresserad av teknik och problemlösning, och det är just det som lockar mig till IT-branschen. 
+                Jag gillar att analysera behov, hitta effektiva lösningar och skapa system som verkligen gör skillnad. 
+                Under studietiden har jag arbetat med språk som C# och Python, byggt applikationer med .NET och databaser, 
+                samt deltagit i projekt där vi samarbetat i team och följt agila arbetssätt.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Bilagor//arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Utforska min</p>
+      <h1 class="title">Lite Erfarenhet om</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./Bilagor//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Bilagor//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Bilagor//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./Bilagor//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Bilagor//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Bilagor//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Bilagor//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node.js</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Bilagor//arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Bläddra bland mina</p>
+      <h1 class="title">Projekt</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Bilagor//project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Bilagor//project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Bilagor//project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Bilagor//arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Hör av dig</p>
+      <h1 class="title">Kontakta mig</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./Bilagor//email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">khalidhassan968@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./Bilagor//linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/khalid-hassan-0b62222b2/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Om</a></li>
+            <li><a href="#experience">Erfarenhet</a></li>
+            <li><a href="#projects">Projekt</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Khalid Hassan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
