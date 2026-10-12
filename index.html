@@ -1,350 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Min Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Khalid Hassan</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">Om mig</a></li>
-          <li><a href="#experience">Erfarenhet</a></li>
-          <li><a href="#projects">Projekt</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Khalid Hassan</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">Om mig</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Erfarenhet</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projekt</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./Bilagor//Bild på mig själv.jpg" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hej, Jag heter</p>
-        <h1 class="title">Khalid Hassan</h1>
-        <p class="section__text__p2">Utbildad systemvetare</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./Bilagor//Khalid_H1_CV.pdf')"
-          >
-            Ladda ner CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Kontakt Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./Bilagor//linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/khalid-hassan-0b62222b2/'"
-          />
-          <img
-            src="./Bilagor//github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Khalid1754'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Lär känna mig mer</p>
-      <h1 class="title">Om mig</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./Bilagor//about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./Bilagor//experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Erfarenhet</h3>
-              <p>0+ år<br /></p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./Bilagor//education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Utbildning</h3>
-              <p>B.Sc. Bachelors Degree<br /> Filosofie kandidatexamen (fil.kand.), inriktning systemutveckling</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-                Jag har precis avslutat min utbildning till systemvetare och ser fram emot att börja min karriär inom IT. 
-                Under utbildningen har jag fått en bred kunskap inom systemutveckling, programmering och databashantering, 
-                vilket har gett mig en god förståelse för hur IT kan användas för att lösa problem och förbättra verksamheter.
-                Jag har alltid varit intresserad av teknik och problemlösning, och det är just det som lockar mig till IT-branschen. 
-                Jag gillar att analysera behov, hitta effektiva lösningar och skapa system som verkligen gör skillnad. 
-                Under studietiden har jag arbetat med språk som C# och Python, byggt applikationer med .NET och databaser, 
-                samt deltagit i projekt där vi samarbetat i team och följt agila arbetssätt.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./Bilagor//arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Utforska min</p>
-      <h1 class="title">Lite Erfarenhet om</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./Bilagor//checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./Bilagor//checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Css</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./Bilagor//checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./Bilagor//checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C#</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./Bilagor//checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./Bilagor//checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./Bilagor//checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node.js</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./Bilagor//arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Bläddra bland mina</p>
-      <h1 class="title">Projekt</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./Bilagor//Project Patient management system.png"
-                alt="Project PMS"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Projekt PMS</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Mohameeddh/OOSU2-LABB2-GRUPP4'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Mohameeddh/OOSU2-LABB2-GRUPP4'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./Bilagor//Project SmartE-School.png"
-                alt="Project SmartE-School"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Projekt SmartE-School</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Mohameeddh/NewRepo'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Mohameeddh/NewRepo'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./Bilagor//Project RestoNation.png"
-                alt="Project RestoNation"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Projekt RestoNation</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/lennartAlvin/RestoNation'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/lennartAlvin/RestoNation'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./Bilagor//arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Hör av dig</p>
-      <h1 class="title">Kontakta mig</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./Bilagor//email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">khalidhassan968@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./Bilagor//linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/khalid-hassan-0b62222b2/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">Om</a></li>
-            <li><a href="#experience">Erfarenhet</a></li>
-            <li><a href="#projects">Projekt</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2025 Khalid Hassan. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Khalid Hassan – Junior systemutvecklare, backend & system</title>
+<meta name="description" content="Portfolio för Khalid Hassan, junior systemutvecklare i Göteborg med fokus på C#, .NET, API-design och SQL Server.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6f8;--surface:#fff;--ink:#0f1b2d;--muted:#56657a;--line:#d9e0e8;--accent:#2f6fed;--accent-ink:#fff;--ok:#157a6b;--code-bg:#0f1b2d;--code-ink:#dbe5f3;--code-key:#8fb4ff;--code-str:#8fe0c9}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1623;--surface:#131f31;--ink:#e8eef6;--muted:#9aa9bd;--line:#25344a;--accent:#6b9bff;--accent-ink:#0d1623;--ok:#5fd0b8;--code-bg:#09111c;--code-ink:#dbe5f3;--code-key:#8fb4ff;--code-str:#8fe0c9}}
+:root[data-theme="dark"]{--bg:#0d1623;--surface:#131f31;--ink:#e8eef6;--muted:#9aa9bd;--line:#25344a;--accent:#6b9bff;--accent-ink:#0d1623;--ok:#5fd0b8;--code-bg:#09111c;--code-ink:#dbe5f3;--code-key:#8fb4ff;--code-str:#8fe0c9}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--ink);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;letter-spacing:-.01em}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.brand{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1.1rem;color:var(--ink);text-decoration:none}
+nav{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:8px;font-size:.95rem}
+nav a:hover{color:var(--ink);background:var(--surface)}
+#theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:5px 10px;font:inherit;font-size:.9rem;cursor:pointer}
+section{padding:72px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin-bottom:28px}
+.hero{padding:64px 0 80px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.me{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+.me img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:2px solid var(--line)}
+.me span{color:var(--muted);font-size:.95rem}
+h1{font-size:clamp(2.6rem,6.5vw,4.6rem);font-weight:700;margin-bottom:18px}
+.lead{font-size:1.15rem;color:var(--muted);max-width:52ch;margin-bottom:28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink)}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.alt:hover{border-color:var(--ink)}
+.code{background:var(--code-bg);color:var(--code-ink);border-radius:14px;padding:20px 22px;font:400 .88rem/1.7 "IBM Plex Mono",ui-monospace,Consolas,monospace;overflow-x:auto}
+.code .req{color:var(--code-str);margin-bottom:8px;display:block}
+.code .k{color:var(--code-key)}.code .s{color:var(--code-str)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:36px 32px}
+.skills h3{font-size:1.05rem;margin-bottom:10px}
+.skills ul{list-style:none;padding:0}
+.skills li{padding:5px 0;border-bottom:1px solid var(--line)}
+.certs{margin-top:44px;padding-top:28px;border-top:1px solid var(--line)}
+.certs h3{margin-bottom:8px}
+.certs p{color:var(--muted)}
+.job{display:grid;grid-template-columns:200px 1fr;gap:8px 32px;padding:22px 0;border-bottom:1px solid var(--line)}
+.job:first-of-type{padding-top:0}
+.when{color:var(--muted);font-size:.95rem}
+.job h3{font-size:1.2rem}
+.job .where{color:var(--muted);margin-bottom:6px}
+.job ul{padding-left:1.1em;color:var(--ink)}
+.job li{margin:3px 0}
+.proj{display:grid;grid-template-columns:1fr 1fr;gap:12px 40px;padding:26px 0;border-bottom:1px solid var(--line)}
+.proj:first-of-type{padding-top:0}
+.proj h3{font-size:1.35rem;margin-bottom:6px}
+.proj .meta{color:var(--muted);font-size:.93rem}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.tag{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:2px 12px;font-size:.85rem}
+.state{margin-top:12px;font-size:.92rem;color:var(--muted)}
+.state.pub a{font-weight:600}
+.note{margin-top:22px;color:var(--muted);font-size:.95rem}
+.contact p{max-width:52ch;color:var(--muted);margin-bottom:22px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
+@media (max-width:760px){.hero{grid-template-columns:1fr;gap:32px;padding-top:40px}.job,.proj{grid-template-columns:1fr}section{padding:52px 0}nav a{padding:6px 7px;font-size:.9rem}.brand{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="#top">Khalid Hassan</a>
+  <nav aria-label="Huvudmeny">
+    <a href="#kompetenser">Kompetenser</a><a href="#erfarenhet">Erfarenhet</a><a href="#projekt">Projekt</a><a href="#kontakt">Kontakt</a>
+    <button id="theme" type="button" aria-label="Byt mellan ljust och mörkt läge">Tema</button>
+  </nav>
+</div></header>
+
+<main id="top">
+<div class="wrap">
+<section class="hero">
+  <div>
+    <div class="me">
+      <img src="Bilagor/Bild%20p%C3%A5%20mig%20sj%C3%A4lv.jpg" alt="Khalid Hassan" onerror="this.style.display='none'">
+      <span>Göteborg</span>
+    </div>
+    <h1>Khalid Hassan</h1>
+    <p class="lead">Junior systemutvecklare med fokus på backend och system. Jag bygger och driftsätter applikationer i C# och .NET, med API-design, SQL Server och testning, och jag arbetar gärna i team.</p>
+    <div class="btns">
+      <a class="btn" href="#projekt">Se mina projekt</a>
+      <a class="btn alt" href="Khalid_Hassan_CV.pdf">Ladda ner CV</a>
+    </div>
+  </div>
+  <div class="code" aria-label="Sammanfattning i JSON-format">
+    <span class="req">GET /khalid</span>
+{<br>
+&nbsp;&nbsp;<span class="k">"roll"</span>: <span class="s">"Systemutvecklare, backend"</span>,<br>
+&nbsp;&nbsp;<span class="k">"stack"</span>: [<span class="s">"C#"</span>, <span class="s">".NET"</span>, <span class="s">"SQL Server"</span>],<br>
+&nbsp;&nbsp;<span class="k">"moln"</span>: <span class="s">"Azure (AZ-900, DP-900)"</span>,<br>
+&nbsp;&nbsp;<span class="k">"examen"</span>: <span class="s">"fil.kand. Informatik"</span>,<br>
+&nbsp;&nbsp;<span class="k">"plats"</span>: <span class="s">"Göteborg"</span><br>
+}
+  </div>
+</section>
+
+<section id="kompetenser">
+  <h2>Kompetenser</h2>
+  <div class="skills">
+    <div><h3>Språk och ramverk</h3><ul><li>C#</li><li>.NET Core / ASP.NET Core</li><li>Python</li><li>JavaScript</li><li>HTML och CSS</li></ul></div>
+    <div><h3>Data och API</h3><ul><li>SQL Server</li><li>RESTful API-design</li><li>JSON</li></ul></div>
+    <div><h3>Moln och verktyg</h3><ul><li>Microsoft Azure</li><li>Git och GitHub</li><li>CI/CD</li><li>Visual Studio och VS Code</li></ul></div>
+    <div><h3>Kvalitet och arbetssätt</h3><ul><li>Unit testing och TDD</li><li>Testning enligt IEEE 829</li><li>Agilt arbetssätt</li></ul></div>
+    <div><h3>AI-verktyg</h3><ul><li>OpenAI API</li><li>Claude</li></ul></div>
+  </div>
+  <div class="certs">
+    <h3>Certifieringar och utbildning</h3>
+    <p>Microsoft Certified: Azure Fundamentals (AZ-900) och Azure Data Fundamentals (DP-900), april 2026.<br>
+    Filosofie kandidatexamen i Informatik, inriktning systemutveckling, Högskolan i Borås, 2022–2025.</p>
+  </div>
+</section>
+
+<section id="erfarenhet">
+  <h2>Erfarenhet</h2>
+  <div class="job">
+    <div class="when">Mars 2026 – sept 2026</div>
+    <div><h3>Applikationstekniker (praktik)</h3><div class="where">Estrella AB, Göteborg</div>
+    <ul><li>Installerade och konfigurerade nya program, bland annat InforMES, och säkerställde stabil drift.</li><li>Hjälpte användare med tekniska problem och hanterade IT-incidenter.</li><li>Underhöll och uppdaterade befintliga system för bättre prestanda.</li></ul></div>
+  </div>
+  <div class="job">
+    <div class="when">Juni 2024 – pågående</div>
+    <div><h3>Maskinoperatör</h3><div class="where">Estrella, Göteborg</div>
+    <ul><li>Såg till att maskinerna fungerade och löste problem som larm.</li></ul></div>
+  </div>
+  <div class="job">
+    <div class="when">Okt 2022 – juni 2024</div>
+    <div><h3>Warehouse Worker</h3><div class="where">DHL, Göteborg</div></div>
+  </div>
+  <div class="job">
+    <div class="when">Juni 2021 – feb 2024</div>
+    <div><h3>Vehicle Assembler</h3><div class="where">Volvo Cars, Torslanda</div></div>
+  </div>
+</section>
+
+<section id="projekt">
+  <h2>Projekt</h2>
+  <div id="projects"></div>
+  <p class="note">Mina senaste projekt ligger i privata repon. Kod och arkitektur går att visa vid en intervju eller på förfrågan.</p>
+</section>
+
+<section id="kontakt" class="contact">
+  <h2>Kontakt</h2>
+  <p>Jag söker min första roll som systemutvecklare inom backend och system. Hör av dig om du vill veta mer om mina projekt.</p>
+  <div class="btns">
+    <a class="btn" href="mailto:khalidhassan968@gmail.com">Skicka e-post</a>
+    <a class="btn alt" href="https://www.linkedin.com/in/khalid-hassan-0b62222b2/" rel="noopener">LinkedIn</a>
+    <a class="btn alt" href="https://github.com/Khalid1754" rel="noopener">GitHub</a>
+  </div>
+</section>
+</div>
+</main>
+<footer><div class="wrap">© 2026 Khalid Hassan</div></footer>
+
+<script>
+/* Redigera projekten här. Sätt repo till repots URL när det är publikt, så visas en GitHub-länk. demo = länk till live-demo. */
+const PROJECTS = [
+  {name:"Jobbansökningstracker", period:"Uppdaterad okt 2026", repo:null, demo:null, tags:[],
+   text:"Verktyg för att samla och följa upp jobbansökningar: företag, roll, status och nästa steg på ett ställe."},
+  {name:"DigitaltDödsbo", period:"Uppdaterad okt 2026", repo:null, demo:null, tags:["C#"],
+   text:"Applikation som hjälper efterlevande att samla och hantera de praktiska och digitala frågorna som uppstår vid ett dödsbo."},
+  {name:"LiFeDenTal", period:"Juni 2026 – pågående", repo:null, demo:null, tags:["C#","ASP.NET Core","SQL Server","REST"],
+   text:"Journalsystem för tandvårdskliniker med patientjournaler och bokning. Jag har designat RESTful API:er för patientdata och bokningsflöden och byggt databasen i SQL Server."},
+  {name:"InterviewCoach.API", period:"Juli 2026", repo:null, demo:null, tags:["C#","API"],
+   text:"Backend-API för intervjuträning, där en användare kan öva på intervjufrågor och få återkoppling."},
+  {name:"MarketPulse.API", period:"Juli 2026", repo:null, demo:null, tags:["JavaScript","API"],
+   text:"API som hämtar och sammanställer marknadsdata så att utvecklingen går att följa på ett ställe."},
+  {name:"SmartE-School", period:"Hackathon, maj 2026", repo:null, demo:null, tags:["C#","WPF","OpenAI API"],
+   text:"Applikation för effektivare inlärning i grundskolan, byggd i team under ett hackathon. Jag ansvarade för funktionalitet och gränssnitt och integrerade AI via OpenAI:s API."},
+  {name:"RestoNation", period:"Aug – nov 2025", repo:null, demo:null, tags:["C#","ASP.NET Core","Agilt"],
+   text:"Teamprojekt utifrån en kunds verkliga behov. Jag bidrog till backend-funktionalitet och arbetade agilt i sprintar med löpande avstämning mot kunden."}
+];
+const el = document.getElementById("projects");
+PROJECTS.forEach(p => {
+  const links = [];
+  if (p.repo) links.push('<a href="'+p.repo+'" rel="noopener">GitHub</a>');
+  if (p.demo) links.push('<a href="'+p.demo+'" rel="noopener">Live demo</a>');
+  const state = links.length ? '<div class="state pub">'+links.join(" &nbsp;|&nbsp; ")+'</div>' : '<div class="state">Privat repo</div>';
+  const tags = p.tags.length ? '<div class="tags">'+p.tags.map(t=>'<span class="tag">'+t+'</span>').join("")+'</div>' : '';
+  const d = document.createElement("article");
+  d.className = "proj";
+  d.innerHTML = '<div><h3>'+p.name+'</h3><div class="meta">'+p.period+'</div>'+state+'</div><div><p>'+p.text+'</p>'+tags+'</div>';
+  el.appendChild(d);
+});
+const root = document.documentElement, btn = document.getElementById("theme");
+btn.addEventListener("click", () => {
+  const dark = root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  root.dataset.theme = dark ? "light" : "dark";
+});
+</script>
+</body>
 </html>
