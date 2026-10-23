@@ -64,6 +64,10 @@ const i18n = {
     code: "Kod på GitHub",
     demo: "Öppna demo",
     shotOf: "Skärmbild av",
+    starS: "Situation",
+    starT: "Uppgift",
+    starA: "Handling",
+    starR: "Resultat",
     allRepos: "Se alla repon på GitHub",
     contactLead: "Jag söker jobb inom fullstack, applikation, integration och implementation i Göteborgsområdet. Hör gärna av dig."
   },
@@ -130,6 +134,10 @@ const i18n = {
     code: "Code on GitHub",
     demo: "Open demo",
     shotOf: "Screenshot of",
+    starS: "Situation",
+    starT: "Task",
+    starA: "Action",
+    starR: "Result",
     allRepos: "See all repositories on GitHub",
     contactLead: "I am looking for roles in full-stack development, applications, integration and implementation in the Gothenburg area. Feel free to get in touch."
   }
@@ -138,6 +146,35 @@ const i18n = {
 // ===== Projekt (nyast först) =====
 // Lämna github/demo som null för att dölja knappen.
 const projects = [
+  {
+    name: "TrAInr",
+    image: null,
+    tech: ["C#", ".NET 10", "ASP.NET Core Web API", "Entity Framework Core", "SQL Server", "Azure SQL", "React", "TypeScript", "Vite", "Claude API", "Groq API", "Gemini API", "Docker", "Azure App Service", "GitHub Actions", "xUnit", "Testcontainers", "Vitest", "PWA"],
+    github: "https://github.com/Khalid1754/TrAInr.API",
+    demo: null,
+    sv: {
+      subtitle: "Träningsapp med AI-coach", period: "Oktober 2026",
+      summary: "En fullstack-app där jag loggar gympass, följer min utveckling i statistik och får råd av en AI-coach.",
+      points: [],
+      star: {
+        s: "Jag ville logga mina gympass och se min utveckling, men vanliga träningsappar gav inga personliga råd utifrån min egen historik.",
+        t: "Bygga en egen app från grunden med loggning, statistik och AI-stöd, som fungerar i mobilen och körs i molnet.",
+        a: "Byggde ett REST-API i ASP.NET Core med EF Core-migreringar mot SQL Server, konton med hashade lösenord och cookie-inloggning, och ett gränssnitt i React och TypeScript. AI kopplades in via ett utbytbart lager (Claude, Groq, Gemini) med strukturerade JSON-svar, medan kalorier och viktprogression räknas med egna regler så att appen fungerar även utan AI. Allt körs i Docker, och GitHub Actions kör tester före varje publicering till Azure.",
+        r: "En driftsatt app i Azure med konton, statistik och grafer, övningsbibliotek, vilotimer, AI-coach med viktförslag och chatt, mörkt läge och svenska/engelska. Den kan installeras på iPhone som app och skyddas av enhets- och integrationstester."
+      }
+    },
+    en: {
+      subtitle: "Workout app with an AI coach", period: "October 2026",
+      summary: "A full-stack app where I log gym sessions, follow my progress in statistics and get advice from an AI coach.",
+      points: [],
+      star: {
+        s: "I wanted to log my gym sessions and track my progress, but typical workout apps gave no personal advice based on my own history.",
+        t: "Build my own app from scratch with logging, statistics and AI support that works on my phone and runs in the cloud.",
+        a: "Built a REST API in ASP.NET Core with EF Core migrations on SQL Server, accounts with hashed passwords and cookie sign-in, and a React and TypeScript front end. AI is plugged in through a swappable layer (Claude, Groq, Gemini) with structured JSON responses, while calories and weight progression use my own rules so the app works without AI. Everything runs in Docker, and GitHub Actions runs the tests before every deployment to Azure.",
+        r: "A deployed app on Azure with accounts, statistics and charts, an exercise library, a rest timer, an AI coach with weight suggestions and chat, dark mode and Swedish/English. It installs on iPhone as an app and is covered by unit and integration tests."
+      }
+    }
+  },
   {
     name: "Jobbansökningsagent",
     nameEn: "Job Application Agent",
@@ -257,6 +294,10 @@ function renderProjects() {
       ? `<div class="project-media"><img src="${esc(p.image)}" alt="${esc(t.shotOf)} ${esc(name)}" loading="lazy"></div>`
       : `<div class="project-media placeholder" aria-hidden="true">${esc(name)}</div>`;
     const points = c.points.length ? `<ul>${c.points.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : "";
+    const star = c.star
+      ? `<dl class="star">${["s", "t", "a", "r"].map((k) =>
+          `<div><dt>${esc(t["star" + k.toUpperCase()])}</dt><dd>${esc(c.star[k])}</dd></div>`).join("")}</dl>`
+      : "";
     const links = [
       p.github ? `<a href="${esc(p.github)}" target="_blank" rel="noopener">${esc(t.code)}</a>` : "",
       p.demo ? `<a href="${esc(p.demo)}" target="_blank" rel="noopener">${esc(t.demo)}</a>` : ""
@@ -268,6 +309,7 @@ function renderProjects() {
           <h3>${esc(name)}</h3>
           <p class="project-meta">${esc(c.subtitle)}${c.period ? ", " + esc(c.period) : ""}</p>
           <p>${esc(c.summary)}</p>
+          ${star}
           ${points}
           <ul class="tags">${p.tech.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
           ${links ? `<div class="project-links">${links}</div>` : ""}
