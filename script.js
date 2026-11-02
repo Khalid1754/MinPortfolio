@@ -2,7 +2,7 @@
 // Ändra en text: leta upp nyckeln i både "sv" och "en" nedan.
 const i18n = {
   sv: {
-    pageTitle: "Khalid Hassan – Junior systemutvecklare",
+    pageTitle: "Khalid Hassan – Junior systemutvecklare & AI-integration",
     pageDescription: "Khalid Hassan, junior systemutvecklare inom backend och system i Göteborg. C#, ASP.NET Core, SQL Server och Azure.",
     skip: "Hoppa till innehållet",
     navLabel: "Huvudmeny",
@@ -14,22 +14,22 @@ const i18n = {
     navProjects: "Projekt",
     navContact: "Kontakt",
     avatarAlt: "Porträtt av Khalid Hassan",
-    role: "Junior systemutvecklare inom backend och system",
-    lead: "Jag bygger API:er, databaser och system i C# och .NET – och ser till att de fungerar i drift. Baserad i Göteborg.",
+    role: "Junior systemutvecklare & AI-integration",
+    lead: "Jag bygger och driftsätter system i C# och .NET, utvecklar AI-agenter och integrerar AI i applikationer. Baserad i Göteborg.",
     cvButton: "Ladda ner CV",
     cvFile: "Bilagor/CV.pdf",
     contactButton: "Kontakta mig",
     emailLabel: "E-post",
     apiLabel: "Sammanfattning av Khalid som ett API-svar",
     api: {
-      roll: "Junior systemutvecklare",
-      fokus: ["Backend", "Fullstack", "Applikation", "Integration", "Implementation"],
+      roll: "Junior systemutvecklare & AI-integration",
+      fokus: ["Backend", "Fullstack", "AI-agenter", "AI-integration", "Integration"],
       stack: ["C#", "ASP.NET Core", "React", "SQL Server", "Azure"],
       ort: "Göteborg",
       söker: ["Fullstack", "Applikation", "Integration", "Implementation"],
       tillgänglig: true
     },
-    about1: "Jag är systemvetare från Högskolan i Borås med inriktning mot backend- och systemutveckling. Jag har byggt och driftsatt applikationer i C# och .NET – med API-design, databaser och testning – i egna projekt, teamprojekt och under utbildningen.",
+    about1: "Jag är systemvetare från Högskolan i Borås med inriktning mot backend- och systemutveckling. Jag har byggt och driftsatt applikationer i C# och .NET – med API-design, databaser och testning – i egna projekt, teamprojekt och under utbildningen. På senare tid har jag fokuserat på att utveckla AI-agenter och integrera AI i system, bland annat med RAG och multiagentflöden.",
     about2: "Under 2026 gjorde jag praktik som applikationstekniker på Estrella, där jag installerade och konfigurerade system som InforMES, hjälpte användare och hanterade IT-incidenter. Det gav mig en bra bild av hur system fungerar när de väl är i drift.",
     about3: "Jag är strukturerad och lösningsorienterad, och trivs bäst när jag får bygga robusta system tillsammans med ett team.",
     factEducation: "Utbildning",
@@ -44,6 +44,7 @@ const i18n = {
     skTest: "Test och metodik",
     skSystest: "Systemtest (IEEE 829)",
     skAgile: "Agilt arbetssätt",
+    skAgents: "AI-agenter",
     skTools: "Verktyg",
     exp1When: "Mars 2026 – September 2026",
     exp1Title: "Applikationstekniker (praktik)",
@@ -72,7 +73,7 @@ const i18n = {
     contactLead: "Jag söker jobb inom fullstack, applikation, integration och implementation i Göteborgsområdet. Hör gärna av dig."
   },
   en: {
-    pageTitle: "Khalid Hassan – Junior Software Engineer",
+    pageTitle: "Khalid Hassan – Junior Software Engineer & AI Integration",
     pageDescription: "Khalid Hassan, junior software engineer focused on backend and systems in Gothenburg, Sweden. C#, ASP.NET Core, SQL Server and Azure.",
     skip: "Skip to content",
     navLabel: "Main menu",
@@ -84,22 +85,22 @@ const i18n = {
     navProjects: "Projects",
     navContact: "Contact",
     avatarAlt: "Portrait of Khalid Hassan",
-    role: "Junior software engineer – backend and systems",
-    lead: "I build APIs, databases and systems in C# and .NET – and make sure they run reliably in production. Based in Gothenburg, Sweden.",
+    role: "Junior software engineer & AI integration",
+    lead: "I build and deploy systems in C# and .NET, develop AI agents and integrate AI into applications. Based in Gothenburg, Sweden.",
     cvButton: "Download resume",
     cvFile: "Bilagor/CV_EN.pdf",
     contactButton: "Contact me",
     emailLabel: "Email",
     apiLabel: "Summary of Khalid as an API response",
     api: {
-      role: "Junior Software Engineer",
-      focus: ["Backend", "Full-stack", "Applications", "Integration", "Implementation"],
+      role: "Junior Software Engineer & AI Integration",
+      focus: ["Backend", "Full-stack", "AI agents", "AI integration", "Integration"],
       stack: ["C#", "ASP.NET Core", "React", "SQL Server", "Azure"],
       location: "Gothenburg, Sweden",
       lookingFor: ["Full-stack", "Applications", "Integration", "Implementation"],
       available: true
     },
-    about1: "I hold a bachelor's degree in Informatics from the University of Borås, specializing in backend and systems development. I have built and deployed applications in C# and .NET – including API design, databases and testing – in personal projects, team projects and during my studies.",
+    about1: "I hold a bachelor's degree in Informatics from the University of Borås, specializing in backend and systems development. I have built and deployed applications in C# and .NET – including API design, databases and testing – in personal projects, team projects and during my studies. Recently I have focused on developing AI agents and integrating AI into systems, including RAG and multi-agent workflows.",
     about2: "In 2026 I completed an internship as an application technician at Estrella, where I installed and configured systems such as InforMES, supported users and handled IT incidents. It gave me a clear picture of how systems behave once they are in production.",
     about3: "I am structured and solution-oriented, and I enjoy building robust systems together with a team.",
     factEducation: "Education",
@@ -114,6 +115,7 @@ const i18n = {
     skTest: "Testing and methods",
     skSystest: "System testing (IEEE 829)",
     skAgile: "Agile / Scrum",
+    skAgents: "AI agents",
     skTools: "Tools",
     exp1When: "March 2026 – September 2026",
     exp1Title: "Application Technician (Internship)",
@@ -147,13 +149,65 @@ const i18n = {
 // Lämna github/demo som null för att dölja knappen.
 const projects = [
   {
+    name: "SelfLearning Agent (POLARIS)",
+    image: null,
+    tech: ["Python", "FastAPI", "Claude API", "Groq API", "RAG", "SQLite FTS5", "Vektorsök (fastembed)", "Telegram Bot API", "pytest", "GitHub Actions", "Claude Code"],
+    github: "https://github.com/Khalid1754/SelfLearning-Agent",
+    demo: null,
+    sv: {
+      subtitle: "Självlärande AI-agent", period: "Oktober 2026 – pågående",
+      summary: "En personlig AI-agent som lär sig av det jag matar in och av det den läser på nätet. Den tränar ingen egen modell, utan bygger upp ett minne som växer för varje körning.",
+      points: [
+        "Kunskapsbas i SQLite med både ordsökning (FTS5) och vektorsökning, som agenten använder för RAG innan den svarar.",
+        "Reflekterar efter varje uppgift och sparar lärdomar och återanvändbara färdigheter. Lärdomar från webben godkänner jag först.",
+        "Nås via terminalen, ett eget chattgränssnitt i webbläsaren (FastAPI) och en Telegram-bot i mobilen, med feedback via 👍/👎.",
+        "57 automatiska tester som körs i GitHub Actions vid varje push."
+      ]
+    },
+    en: {
+      subtitle: "Self-learning AI agent", period: "October 2026 – Present",
+      summary: "A personal AI agent that learns from what I feed it and from what it reads on the web. It does not train its own model; instead it builds a memory that grows with every run.",
+      points: [
+        "Knowledge base in SQLite with both keyword search (FTS5) and vector search, which the agent uses for RAG before it answers.",
+        "Reflects after every task and saves lessons and reusable skills. Lessons learned from the web are approved by me first.",
+        "Available through the terminal, its own browser chat interface (FastAPI) and a Telegram bot on my phone, with 👍/👎 feedback.",
+        "57 automated tests that run in GitHub Actions on every push."
+      ]
+    }
+  },
+  {
+    name: "AgentFlow",
+    image: null,
+    tech: ["C#", ".NET 10", "Minimal API", "Entity Framework Core", "SQL Server", "Groq API", "React", "TypeScript", "Vite", "Server-Sent Events", "Docker", "GitHub Actions", "xUnit", "Vitest"],
+    github: "https://github.com/Khalid1754/AgentFlow.API",
+    demo: null,
+    sv: {
+      subtitle: "Multiagentsystem med AI", period: "Oktober 2026",
+      summary: "Fyra AI-agenter (Researcher, Analyst, Writer och Reviewer) lämnar över uppgifter till varandra och tar fram en rapport med källor utifrån en fråga, där varje överlämning visas live.",
+      points: [
+        "Researcher söker på Wikipedia och DuckDuckGo och lämnar upp till 8 källor vidare. Reviewer kan skicka tillbaka rapporten till Writer om något saknas.",
+        "En orkestrerare i .NET 10 styr flödet via en bakgrundskö, sparar varje steg i SQL Server med EF Core och strömmar dem till React-gränssnittet med Server-Sent Events.",
+        "17 automatiska tester som körs i GitHub Actions."
+      ]
+    },
+    en: {
+      subtitle: "Multi-agent AI system", period: "October 2026",
+      summary: "Four AI agents (Researcher, Analyst, Writer and Reviewer) hand tasks over to each other to produce a sourced report from a question, with every handoff shown live.",
+      points: [
+        "The Researcher searches Wikipedia and DuckDuckGo and passes on up to 8 sources. The Reviewer can send the report back to the Writer if something is missing.",
+        "An orchestrator in .NET 10 runs the flow through a background queue, saves each step in SQL Server with EF Core and streams them to the React front end with Server-Sent Events.",
+        "17 automated tests that run in GitHub Actions."
+      ]
+    }
+  },
+  {
     name: "TrAInr",
     image: null,
     tech: ["C#", ".NET 10", "ASP.NET Core Web API", "Entity Framework Core", "SQL Server", "Azure SQL", "React", "TypeScript", "Vite", "Claude API", "Groq API", "Gemini API", "Docker", "Azure App Service", "GitHub Actions", "xUnit", "Testcontainers", "Vitest", "PWA"],
     github: "https://github.com/Khalid1754/TrAInr.API",
     demo: null,
     sv: {
-      subtitle: "Träningsapp med AI-coach", period: "Oktober 2026",
+      subtitle: "Träningsapp med AI-coach", period: "Oktober 2026 – pågående",
       summary: "En fullstack-app där jag loggar gympass, följer min utveckling i statistik och får råd av en AI-coach.",
       points: [],
       star: {
@@ -164,7 +218,7 @@ const projects = [
       }
     },
     en: {
-      subtitle: "Workout app with an AI coach", period: "October 2026",
+      subtitle: "Workout app with an AI coach", period: "October 2026 – Present",
       summary: "A full-stack app where I log gym sessions, follow my progress in statistics and get advice from an AI coach.",
       points: [],
       star: {
@@ -176,19 +230,18 @@ const projects = [
     }
   },
   {
-    name: "Jobbansökningsagent",
-    nameEn: "Job Application Agent",
+    name: "JobbAgent",
     image: null,
     tech: ["C#", ".NET 10", "Claude API", "JobTech API", "Azure SQL", "React", "Vite"],
-    github: null, // t.ex. "https://github.com/Khalid1754/JobAgent-2-"
+    github: "https://github.com/Khalid1754/JobbAgent.API",
     demo: null,
     sv: {
-      subtitle: "AI-agent för jobbsökning", period: "Oktober 2026 – pågående",
+      subtitle: "AI-agent för jobbsökning", period: "Oktober 2026",
       summary: "En AI-agent som hämtar lediga jobb från Platsbanken och listar de annonser som matchar mina kompetenser och mitt CV.",
       points: ["Hämtar annonser via JobTechs API för Göteborgsområdet.", "Använder Claude API för att bedöma hur väl varje annons matchar CV:t."]
     },
     en: {
-      subtitle: "AI agent for job searching", period: "October 2026 – Present",
+      subtitle: "AI agent for job searching", period: "October 2026",
       summary: "An AI agent that fetches open positions from Platsbanken, the Swedish public job board, and lists the ads that match my skills and resume.",
       points: ["Fetches job ads for the Gothenburg area through the JobTech API.", "Uses the Claude API to assess how well each ad matches the resume."]
     }
@@ -197,7 +250,7 @@ const projects = [
     name: "MarketPulse",
     image: null,
     tech: ["C#", "ASP.NET Core Web API", "Azure SQL", "React", "Vite"],
-    github: null, // t.ex. "https://github.com/Khalid1754/MarketPulse.API"
+    github: "https://github.com/Khalid1754/MarketPulse.API",
     demo: null,
     sv: {
       subtitle: "Webbapplikation med API", period: "Juli 2026",
@@ -212,15 +265,15 @@ const projects = [
     name: "LiFeDenTal",
     image: null, // t.ex. "Bilagor/Project LiFeDenTal.png"
     tech: ["C#", "ASP.NET Core Web API", "SignalR", "React", "Vite", "Azure SQL", "Azure Static Web Apps"],
-    github: null, // t.ex. "https://github.com/Khalid1754/LiFeDenTal"
+    github: "https://github.com/Khalid1754/LiFeDenTal",
     demo: null,
     sv: {
-      subtitle: "Journalsystem för tandvård", period: "Juni 2026 – pågående",
+      subtitle: "Journalsystem för tandvård", period: "Juni 2026 – September 2026",
       summary: "Ett journalsystem för tandvårdskliniker med patientjournaler och bokning.",
       points: ["Designade och byggde RESTful API:er för patientdata och bokningsflöden.", "Använder SignalR för realtidskommunikation mellan server och klient.", "Modellerade databasen med CRUD för journaler och bokningar."]
     },
     en: {
-      subtitle: "Dental records system", period: "June 2026 – Present",
+      subtitle: "Dental records system", period: "June 2026 – September 2026",
       summary: "A records system for dental clinics with patient records and appointment booking.",
       points: ["Designed and built RESTful APIs for patient data and booking flows.", "Uses SignalR for real-time communication between server and client.", "Modeled the database with CRUD for records and bookings."]
     }
